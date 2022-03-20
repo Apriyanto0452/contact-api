@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
-const port = 3000;
 const expressLayouts = require("express-ejs-layouts");
 const { body, validationResult, check } = require("express-validator");
+
+const port = process.env.PORT || 3000;
 
 const {
   loadContact,
