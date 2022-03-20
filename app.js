@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const expressLayouts = require("express-ejs-layouts");
 const { body, validationResult, check } = require("express-validator");
+const cors = require("cors");
 
 const port = process.env.PORT || 3000;
 
@@ -18,6 +19,7 @@ const {
 app.use(expressLayouts);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cors());
 
 // konfigurasi bahwa kita menggunakan ejs
 app.set("view engine", "ejs");
@@ -96,6 +98,9 @@ app.get("/delete/:nama", (req, res) => {
   }
 });
 
+app.get("/detail", (req, res) => {
+  res.send("Contoh");
+});
 app.get("/edit/:nama", (req, res) => {
   const contact = findContact(req.params.nama);
 
