@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.1",
@@ -10,7 +11,6 @@
   "description": "��#\u0000 \u0000c\u0000o\u0000n\u0000t\u0000a\u0000c\u0000t\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000#\u0000 \u0000c\u0000o\u0000n\u0000t\u0000a\u0000c\u0000t\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000#\u0000 \u0000c\u0000o\u0000n\u0000t\u0000a\u0000c\u0000t\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
